@@ -1,0 +1,11 @@
+{
+  "firstname": "parimala",
+  "lastname": "jangam",
+  "totalprice": 1000000,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2025-07-01",
+    "checkout": "2025-07-05"
+  },
+  "additionalneeds": "lemon"
+}

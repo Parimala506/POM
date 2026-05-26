@@ -7,7 +7,7 @@ test("create post req using json external file", async ({ request }) => {
     const requestBody = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'));
 
     //send post request
-    const response = await request.post("https://restful-booker.herokuapp.com/booking",
+    const response = await request.post("/booking",
         { data: requestBody });
 
     const responseBody = await response.json();
