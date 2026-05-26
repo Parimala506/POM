@@ -21,6 +21,7 @@ test('update booking{PUT}', async ({ request }) => {
     const tokenresponsebody = await tokenresponse.json();
     const token = tokenresponsebody.token;
     console.log(token);
+    // printing ffffff
 
     // sending update req
     const updateRequestBody = readJson('./testdata/updatebooking.json');
