@@ -51,6 +51,40 @@ export default defineConfig({
     //   use: { ...devices['Desktop Safari'] },
     // },
 
+
+// running all env's with different brosers at a time
+//   {
+//     name: 'DEV-Chrome',
+//     use: {
+//       browserName: 'chromium',
+//       baseURL: 'https://dev.com'
+//     }
+//   },
+//   {
+//     name: 'TEST-Firefox',
+//     use: {
+//       browserName: 'firefox',
+//       baseURL: 'https://test.com'
+//     }
+//   },
+//   {
+//     name: 'STAGE-Edge',
+//     use: {
+//       browserName: 'chromium',
+//       channel: 'msedge',
+//       baseURL: 'https://stage.com'
+//     }
+//   },
+//   {
+//     name: 'PROD-Safari',
+//     use: {
+//       browserName: 'webkit',
+//       baseURL: 'https://prod.com'
+//     }
+//   },
+
+
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',

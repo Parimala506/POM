@@ -2,7 +2,7 @@ import path from 'path';
 import { readCSV } from '../utils/csvReader';
 import { readExcel } from '../utils/excelReader';
 import fs, { readFileSync } from 'fs';
-import { error } from 'console';
+// import { error } from 'console';
 
 export function readData(filePath: string, sheetName?: string) {
     const ext = path.extname(filePath).toLocaleLowerCase();

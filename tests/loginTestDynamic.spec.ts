@@ -6,13 +6,12 @@ import loginDataNew from '../testdata/LoginDataNew.json';
 //loops through all records in JSON file 
 loginDataNew.forEach((data) => {
 
-    if (!data.run) return; 
+    if (!data.run) return;
     //skip disable records 
 
-    test(`Login Test - ${data.username}`, async ({ page }) => { 
+    test(`Login Test - ${data.username}`, async ({ page }) => {
         //dynamic test creatd for user(based on the data set taken from JSON 
         // it will start working and execute below methods of that class )
-
         const loginPage = new LoginPage(page);
         loginPage.gotoLoginPage();
         loginPage.login(data.username, data.password);
@@ -22,9 +21,10 @@ loginDataNew.forEach((data) => {
         else {
             await expect(loginPage.errorMessage).toBeVisible();
         }
-//by all above code we can observe one thing each iteration becomes a separate test in Report 
+        //by all above code we can observe one thing each iteration becomes a separate test in Report 
 
     });
+
 
 })
 
